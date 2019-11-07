@@ -23,6 +23,8 @@ public class NoteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_note);
 
+        setTitle("Write Note");
+
         editText = findViewById(R.id.editText);
         Intent intent = getIntent();
         noteId = intent.getIntExtra("noteId",-1);

@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        setTitle("Your Notes");
+
         listView = findViewById(R.id.listView);
         sharedPreferences = getSharedPreferences("com.example.notes_app", Context.MODE_PRIVATE);
 
